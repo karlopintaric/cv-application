@@ -1,0 +1,16 @@
+label {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: baseline<
+    justify-content: center;
+}
+
+label input {
+    flex-grow: 1;
+    padding: 3px;
+}
+
+p {
+    margin: 0;
+}

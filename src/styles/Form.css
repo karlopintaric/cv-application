@@ -1,0 +1,22 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.87);
+    padding: 32px;
+    border-radius: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all ease-in-out 0.1s;
+}
+
+form:hover {
+    transform: scale(1.05);
+}
+ 
+form button {
+    flex-grow: 1;
+}
+
+form label:last-of-type {
+    margin-bottom: 2rem;
+}
