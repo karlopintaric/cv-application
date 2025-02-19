@@ -2,7 +2,7 @@ import { useState } from "react";
 import Input from "./Input";
 import "../styles/Form.css";
 
-export default function Form({ title, fields }) {
+export default function Form({ title, fields, expandable }) {
   const [fieldsData, setFieldsData] = useState(fields);
   const [isEdit, setIsEdit] = useState(true);
 
@@ -33,15 +33,20 @@ export default function Form({ title, fields }) {
           id={field.id}
           label={field.label}
           value={field.value}
+          type={field.type}
           onChange={onChange}
           isEdit={isEdit}
         />
       ))}
 
-      <button type="submit">Save</button>
-      <button type="button" onClick={enterEdit}>
-        Edit
-      </button>
+      <div className="form-buttons">
+        <button type="submit" disabled={!isEdit}>
+          Save
+        </button>
+        <button type="button" onClick={enterEdit}>
+          Edit
+        </button>
+      </div>
     </form>
   );
 }

@@ -12,9 +12,13 @@ form {
 form:hover {
     transform: scale(1.05);
 }
- 
-form button {
-    flex-grow: 1;
+
+
+form .form-buttons {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 form label:last-of-type {

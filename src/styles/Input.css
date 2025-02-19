@@ -2,7 +2,7 @@ label {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    align-items: baseline<
+    align-items: baseline;
     justify-content: center;
 }
 
